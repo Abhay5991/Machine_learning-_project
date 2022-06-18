@@ -1,17 +1,18 @@
-from setuptools import find_packages, setup
+from setuptools import setup,find_packages
 from typing import List
 
 #Declaring variables for setup functions
 PROJECT_NAME="housing-predictor"
-VERSION="0.0.1"
+VERSION="0.0.3"
 AUTHOR="Avnish Yadav"
 DESRCIPTION="This is a first FSDS Nov batch Machine Learning Project"
-PACKAGES=["housing"]
+
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 
 def get_requirements_list()->List[str]:
     """
+   
     Description: This function is going to return list of requirement 
     mention in requirements.txt file
 
@@ -27,8 +28,7 @@ name=PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
 description=DESRCIPTION,
-packages=find_packages(),
+packages=find_packages(), 
 install_requires=get_requirements_list()
-
 )
 
