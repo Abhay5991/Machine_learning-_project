@@ -62,9 +62,9 @@ git remote -v
 ```
 
 To setup CI/CD pipeline in heroku we need 3 information
-1. HEROKU_EMAIL = abhay.kumar817@gmail.com
+1. HEROKU_EMAIL = anishyadav7045075175@gmail.com
 2. HEROKU_API_KEY = <>
-3. HEROKU_APP_NAME = ml-regession
+3. HEROKU_APP_NAME = ml-regression-app
 
 BUILD DOCKER IMAGE
 ```
@@ -94,6 +94,22 @@ docker stop <container_id>
 ```
 
 
-'''
+
+```
 python setup.py install
-'''
+```
+
+
+Install ipykernel
+
+```
+pip install ipykernel
+```
+
+
+Data Drift:
+When your datset stats gets change we call it as data drift
+
+
+
+## Write a function to get training file path from artifact dir
